@@ -1,12 +1,12 @@
-<h1>Student Name: <%= @lesson.student_name %></h1>
+<div class="table-responsive">
+<h3>Student Name: <%= @lesson.student_name %></h3>
+<h4>Date of lesson: <%= @lesson.lesson_date%></h4>
 
-<h2>Date of lesson: <%= @lesson.lesson_date%>
-
-<table>
+<table class="table table-striped border-dark">
     <tr>
-        <th>Lesson Number</th>
-        <th>Lesson Topic</th>
-        <th>Lesson Description</th>
+        <th scope="col">Lesson Number</th>
+        <th scope="col">Lesson Topic</th>
+        <th scope="col">Lesson Description</th>
     </tr>
     <tr>
         <td><%= @lesson.lesson_number%></td>
@@ -20,3 +20,4 @@
 <%= link_to "Edit", edit_lesson_path(@lesson)%>
 <%= link_to 'Delete', @lesson, method: :delete, data: { confirm: 'Are you sure you want to delete this log?' } %>
 <%= link_to 'Back', root_path(@lesson) %>
+</div>

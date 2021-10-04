@@ -1,11 +1,12 @@
+<div class="table-responsive">
 <h1>Students List</h1>
-
-<table>
+<table class="table table-striped border-dark">
     <thead>
     <tr>
-        <th>Student Name</th>
-        <th>Instrument</th>
-        <th>Session</th>
+        <th scope="col">Student Name</th>
+        <th scope="col">Instrument</th>
+        <th scope="col">Session</th>
+        <th scope="col" colspan="3" >Options</th>
     </tr>
     </thead>
 
@@ -25,4 +26,8 @@
 
     <br> 
 
-<button><%= link_to 'Create New Lesson Log', new_lesson_path %></button>       
+<button type="button" class="btn btn-outline-primary" data-mdb-ripple-color="light">
+    <p class="text"><%= link_to 'Create New Lesson Log', new_lesson_path %></P>
+</button>       
+
+</div>

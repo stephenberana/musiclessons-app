@@ -1,32 +1,32 @@
 <%= form_with(model: lesson) do |form| %>
-<div class="field">
-    <%= form.label :student_name %>
-    <%= form.text_field :student_name %>
+<div class="form-group">
+    <%= form.label :student_name, style: 'padding: 1em' %>    
+    <%= form.text_field :student_name, class: 'form-control', style: 'width:40%' %>
 </div>
 
-<div class="field">
-    <%= form.label :instrument %>
-    <%= form.text_field :instrument %>
+<div class="form-group">
+    <%= form.label :instrument, style: 'padding: 1em' %>
+    <%= form.text_field :instrument, class: 'form-control', style: 'width:40%' %>
 </div>
 
-<div class="field">
-    <%= form.label :lesson_number %>
-    <%= form.number_field :lesson_number %>
+<div class="form-group">
+    <%= form.label :lesson_number, style: 'padding: 1em' %>
+    <%= form.number_field :lesson_number, class: 'form-control', style: 'width: 40%' %>
 </div>
 
-<div class="field">
-    <%= form.label :lesson_date %>
-    <%= form.date_field :lesson_date %>
+<div class="form-group">
+    <%= form.label :lesson_date, style: 'padding: 1em' %>
+    <%= form.date_field :lesson_date, class: 'form-control', style: 'width: 40%' %>
 </div>
 
-<div class="field">
-    <%= form.label :lesson_topic %>
-    <%= form.text_field :lesson_topic %>
+<div class="form-group">
+    <%= form.label :lesson_topic, style: 'padding: 1em' %>
+    <%= form.text_field :lesson_topic, class: 'form-control', style: 'width: 40%' %>
 </div>
 
-<div class="field">
-    <%= form.label :lesson_description %>
-    <%= form.text_field :lesson_description %>
+<div class="form-group">
+    <%= form.label :lesson_description, style: 'padding: 1em' %>
+    <%= form.text_field :lesson_description, class: 'form-control', style: 'width: 40%' %>
 </div>
 
 <div class="actions">
