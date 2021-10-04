@@ -1,0 +1,36 @@
+<%= form_with(model: lesson) do |form| %>
+<div class="field">
+    <%= form.label :student_name %>
+    <%= form.text_field :student_name %>
+</div>
+
+<div class="field">
+    <%= form.label :instrument %>
+    <%= form.text_field :instrument %>
+</div>
+
+<div class="field">
+    <%= form.label :lesson_number %>
+    <%= form.number_field :lesson_number %>
+</div>
+
+<div class="field">
+    <%= form.label :lesson_date %>
+    <%= form.date_field :lesson_date %>
+</div>
+
+<div class="field">
+    <%= form.label :lesson_topic %>
+    <%= form.text_field :lesson_topic %>
+</div>
+
+<div class="field">
+    <%= form.label :lesson_description %>
+    <%= form.text_field :lesson_description %>
+</div>
+
+<div class="actions">
+    <%= form.submit %>
+</div>
+
+<%end%>

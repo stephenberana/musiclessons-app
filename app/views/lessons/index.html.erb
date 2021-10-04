@@ -1,0 +1,28 @@
+<h1>Students List</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Student Name</th>
+        <th>Instrument</th>
+        <th>Session</th>
+    </tr>
+    </thead>
+
+    <tbody>
+        <% @lessons.each do |lesson| %>
+            <tr>
+                <td><%= lesson.student_name %></td>
+                <td><%= lesson.instrument %></td>
+                <td><%= lesson.lesson_number %></td>
+                <td><%= link_to 'Show', lesson%></td>
+                <td><%= link_to 'Edit', edit_lesson_path(lesson) %></td>
+                <td><%= link_to 'Delete', lesson, method: :delete, data: { confirm: 'Are you sure you want to delete this log?' } %></td>
+            </tr>
+            <%end%>
+        </tbody>
+    </table>
+
+    <br> 
+
+<button><%= link_to 'Create New Lesson Log', new_lesson_path %></button>       
